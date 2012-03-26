@@ -1,0 +1,17 @@
+= ans-hash
+
+sha256 等のハッシュを生成するメソッドを提供する
+
+ class MyHashClass
+   module ClassMethods
+     include Ans::Hash::Methods
+     
+     def salt
+       "mysalt"
+     end
+   end
+   extend ClassMethods
+ end
+
+ hash = MyHashClass::sha256 value
+
