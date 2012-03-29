@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
   s.add_development_dependency "ans-gem-builder"
+  s.add_development_dependency "ans-feature-helpers"
 end

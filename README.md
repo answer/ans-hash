@@ -6,13 +6,13 @@
 使い方
 ------
 
-	class MyHashClass 
-	  extend Ans::Hash 
-	  # salt メソッドは必ず作成してください。 
-	  def self.salt 
-	    "salt" 
-	  end 
-	end 
+	class MyHashClass
+	  extend Ans::Hash
+	  # salt メソッドは必ず作成してください。
+	  def self.salt
+	    "salt"
+	  end
+	end
 
 	MyHashClas.sha256(value,false,false)
 
