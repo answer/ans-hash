@@ -5,15 +5,21 @@
  
 使い方
 ------
-class MyHashClass 
-  extend Ans::Hash 
-  # salt メソッドは必ず作成してください。 
-  def self.salt 
-    "salt" 
-  end 
-end 
-  
-MyHashClas.sha256(value,false,false)
+
+	class MyHashClass 
+	  extend Ans::Hash 
+	  # salt メソッドは必ず作成してください。 
+	  def self.salt 
+	    "salt" 
+	  end 
+	end 
+
+	MyHashClas.sha256(value,false,false)
+
+ハッシュを生成するクラスに Ans::Hash を extend して、 `self.salt` メソッドを作成すると
+ハッシュメソッドを呼び出せるようになります
+
+self.salt で返す値は、クラスごとに適当な値を使用してください
 
 パラメータの解説
 ----------------
